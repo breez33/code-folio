@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+}
+
+.brand-logo a h2 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.42;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu .nav-item {
+  padding: 18px;
+  font-size: 15px;
+  line-height: 26px;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 5.5rem 0;
+}
+
+.hero-icon-background {
+  background-color: #da5252;
+  padding: 1rem;
+  border-radius: 50rem;
+}
+
+.full-site-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  transition: all 0.4s ease-in;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-header {
+  display: flex;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.modal-header .fa-times {
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.modal-header .fa-times:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.full-site-modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+}
+
+[data-animation="zoomInOut"].full-site-modal {
+  transform: scale(0.2);
+}
+
+[data-animation="zoomInOut"].full-site-modal.is-visible {
+  transform: none;
+}
