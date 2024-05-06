@@ -15,12 +15,12 @@
 </head>
 <body>
   <!-- Theme Tab -->
-  <div class="theme-panel open">
+  <div class="theme-panel">
     <div class="theme-body">
       <span>Change Theme</span>
       <div class="btn-group">
-        <button class="switch-btn active">Light</button>
-        <button class="switch-btn">Dark</button>
+        <button data-toggle="light" class="switcher-btn active">Light</button>
+        <button data-toggle="dark" class="switcher-btn">Dark</button>
       </div>
       <button class="theme-tab">
         <i class="fa-solid fa-chevron-left"></i>
@@ -61,46 +61,60 @@
         </div>
       </div>
     </section>
+    <section class="portfolio-section">
+      <div class="container search-container">
+        <label for="search">
+          <input type="text" autocomplete="off" id="search" class="search-input" placeholder="Search....">
+          <i class="fa-solid fa-search"></i>
+        </label>
+        <ul class="portfolio-filter-nav ul-defaults-none">
+          <li>All Work</li>
+          <li>Web Development</li>
+          <li>App Development</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Modals -->
+    <!-- About Page Modal -->
+    <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
+      <header class="modal-header">
+        <h3 class="header-md">ABOUT PAGE</h3>
+        <i class="fa fa-times" data-close></i>
+      </header>
+      <div class="modal-body">
+        <div class="image-wrapper">
+          <img src="/assets/images/img4.jpg" alt="headshot">
+        </div>
+        <h2>Brian Ellis</h2>
+        <p>Text 1</p>
+        <p>text 2</p>
+        <div>
+          <div>Email Me:</div>
+          <a href="mailto:brian.ellis0724@gmail.com">brian.ellis0724@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Page Modal -->
+    <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
+      <header class="modal-header">
+        <h3 class="header-md">Contact</h3>
+        <i class="fa fa-times" data-close></i>
+      </header>
+      <div class="modal-body">
+        <div class="image-wrapper">
+          <img src="/assets/images/img4.jpg" alt="headshot">
+        </div>
+        <h2>Brian Ellis</h2>
+        <p>Text 1</p>
+        <p>text 2</p>
+        <div>
+          <div>Email Me:</div>
+          <a href="mailto:brian.ellis0724@gmail.com">brian.ellis0724@gmail.com</a>
+        </div>
+      </div>
+    </div>
   </main>
-  <!-- Modals -->
-  <!-- About Page Modal -->
-  <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
-    <header class="modal-header">
-      <h3 class="header-md">ABOUT PAGE</h3>
-      <i class="fa fa-times" data-close></i>
-    </header>
-    <div class="modal-body">
-      <div class="image-wrapper">
-        <img src="/assets/images/img4.jpg" alt="headshot">
-      </div>
-      <h2>Brian Ellis</h2>
-      <p>Text 1</p>
-      <p>text 2</p>
-      <div>
-        <div>Email Me:</div>
-        <a href="mailto:brian.ellis0724@gmail.com">brian.ellis0724@gmail.com</a>
-      </div>
-    </div>
-  </div>
-  <!-- Contact Page Modal -->
-  <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
-    <header class="modal-header">
-      <h3 class="header-md">Contact</h3>
-      <i class="fa fa-times" data-close></i>
-    </header>
-    <div class="modal-body">
-      <div class="image-wrapper">
-        <img src="/assets/images/img4.jpg" alt="headshot">
-      </div>
-      <h2>Brian Ellis</h2>
-      <p>Text 1</p>
-      <p>text 2</p>
-      <div>
-        <div>Email Me:</div>
-        <a href="mailto:brian.ellis0724@gmail.com">brian.ellis0724@gmail.com</a>
-      </div>
-    </div>
-  </div>
   <script src="/js/main.js"></script>
 </body>
 </html>
